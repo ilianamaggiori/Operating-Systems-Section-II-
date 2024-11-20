@@ -1,4 +1,4 @@
-LunixTNG: A Wireless Sensor Network Driver on the Linux operating system 
+## LunixTNG: A Wireless Sensor Network Driver on the Linux operating system 
 
 <img width="639" alt="Screenshot 2024-11-20 at 11 23 13 PM" src="https://github.com/user-attachments/assets/b4755865-0c37-4d72-8159-845330ef3a1d">
 
@@ -24,6 +24,18 @@ And the results would appear as a series of measurements like:
 
 **27.791**[small pause for acquiring the measurement] **27.791 27.693 27.791 ^C**
 
+The implementation of the code for the 
+
+#### In the implementation of this project, along with the understanding of how a driver works, we got (more)familiar with consepts like Process και Interrupt Context,Synchronization methods, safe data transfer to user space etc.
+
+The files that implement the basic driver's operations are:
+```arduino
+lunix-chrdev.h
+```
+and 
+```arduino
+lunix-chrdev.c
+```
 ### System Requirements
 
 To run the driver, ensure that the following system requirements are met:
