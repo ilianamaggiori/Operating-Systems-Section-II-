@@ -44,15 +44,15 @@ To run the driver, ensure that the following system requirements are met:
 - A machine (physical or virtual) with at least one available serial port.
 - (Optional for laboratory setup) Access to a real sensor connected to /dev/ttyUSB1 on the host machine.
   
-#### Software Requirements:
+### Software Requirements:
 - **QEMU-KVM:** Virtual machine software capable of emulating a serial port and running the driver inside the VM.
 Ensure QEMU-KVM is installed and properly configured on your system.
 - **Linux Operating System:** The system running the driver must be running a Linux-based OS (Ubuntu, CentOS, etc.).
 - **Driver Dependencies:** Any libraries or kernel modules required by the driver should be installed (refer to the driver documentation for details).
-#### Network Requirements:
+  
+### Network Requirements:
 If you are working outside the laboratory, you need network access to **lunix.cslab.ece.ntua.gr** on **port 49152 for the remote sensor data**.
-    - Optional:
-utopia.sh script: This script simplifies the process of mapping the virtual serial port to the TCP server. It is provided in the project directory.
+    
 ### How to Run the Driver
 
 **1. On the CS Laboratory Machine (with a Real Sensor)**
@@ -70,7 +70,7 @@ To run the driver on a physical system, the base station must be connected to a 
 ```
 **Driver Behavior:** Once this mapping is set up, any access to the virtual serial port /dev/ttyS1 inside the QEMU-KVM VM will correspond to the physical /dev/ttyUSB1 port on the host system. The driver will operate as expected, and there is no need to modify the device path in the example code.
 
- **2. On a Machine Outside the Laboratory (e.g., Personal Machine or Cloud) -- An ssh connection to the lab server is needed ** 
+ #### 2. On a Machine Outside the Laboratory (e.g., Personal Machine or Cloud) -- An ssh connection to the lab server is needed
 
 If you are developing outside the laboratory environment (e.g., using QEMU-KVM on your personal machine or in the cloud), and you do not have direct access to a physical sensor, you can still test the driver by connecting to a remote TCP/IP server that broadcasts measurements from a base station.
 
