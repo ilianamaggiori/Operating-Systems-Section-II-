@@ -26,7 +26,7 @@ And the results would appear as a series of measurements like:
 
 The implementation of the code for the 
 
-#### In the implementation of this project, along with the understanding of how a driver works, we got (more)familiar with consepts like Process και Interrupt Context,Synchronization methods, safe data transfer to user space etc.
+#### In the implementation of this project, along with the understanding of how a driver works, we got (more)familiar with concepts like Process και Interrupt Context,Synchronization methods, safe data transfer to user space etc.
 
 The files that implement the basic driver's operations are:
 ```arduino
